@@ -12,7 +12,6 @@ st.set_page_config(
 )
 
 # --- Custom CSS for the "Vibe" ---
-# UPDATED: Removed the .stMetric white background style to match your dark mode screenshot.
 st.markdown("""
 <style>
     .big-font { 
@@ -50,41 +49,41 @@ page = st.sidebar.radio("Go to:", [
 ])
 
 st.sidebar.markdown("---")
-[cite_start]st.sidebar.info("**Dates:** Jan 23-27, 2026\n\n**Location:** Bangalore (Sarthak's PG) [cite: 366]")
+st.sidebar.info("**Dates:** Jan 23-27, 2026\n\n**Location:** Bangalore (Sarthak's PG)")
 
 # ==========================================
 # PAGE: HOME & LORE
 # ==========================================
 if page == "Home & Lore":
-    [cite_start]st.title("The Most Unnecessary Bangalore Trip Presentation You'll Ever See [cite: 1]")
-    [cite_start]st.caption("Because regular invites are too mainstream [cite: 3]")
+    st.title("The Most Unnecessary Bangalore Trip Presentation You'll Ever See")
+    st.caption("Because regular invites are too mainstream")
     
-    [cite_start]st.warning("⚠️ URGENT: This could've been a text, but here we are with 60 slides instead. Buckle up. [cite: 4-8]")
+    st.warning("⚠️ URGENT: This could've been a text, but here we are with 60 slides instead. [cite_start]Buckle up. [cite: 4-8]")
 
     col1, col2 = st.columns(2)
     
     with col1:
-        [cite_start]st.subheader("Why Does This Exist? [cite: 9]")
+        st.subheader("Why Does This Exist?")
         st.write("""
         * **Option A:** We have too much free time.
         * **Option B:** We wanted to annoy you.
         * [cite_start]**Option C:** All of the above. [cite: 10-15]
         """)
         
-        [cite_start]st.markdown("### Scientifically Proven Fun Levels [cite: 121]")
+        st.markdown("### Scientifically Proven Fun Levels")
         # These will now render in default dark mode style (White text on transparent bg)
         c1, c2, c3 = st.columns(3)
-        [cite_start]c1.metric("Chaos Probability", "98%", "Very High") # [cite: 122, 125]
-        [cite_start]c2.metric("Laughter Quotient", "87%", "Abs will hurt") # [cite: 123, 126, 129]
-        [cite_start]c3.metric("Unforgettable", "100%", "Good Lore") # [cite: 124, 127, 130]
+        c1.metric("Chaos Probability", "98%", "Very High")
+        c2.metric("Laughter Quotient", "87%", "Abs will hurt")
+        c3.metric("Unforgettable", "100%", "Good Lore")
 
     with col2:
-        [cite_start]st.subheader("The Secret Sauce [cite: 147]")
+        st.subheader("The Secret Sauce")
         [cite_start]st.info("Good People + Bad Jokes + Great Food + Random Vibes + Lore [cite: 149-153]")
 
     st.markdown("---")
-    [cite_start]st.subheader("📜 Past Trip Highlights (The Lore) [cite: 98]")
-    [cite_start]st.markdown("We have zero boring moments since 1947. Here is the evidence[cite: 97]:")
+    st.subheader("📜 Past Trip Highlights (The Lore)")
+    st.markdown("We have zero boring moments since 1947. Here is the evidence:")
     
     with st.expander("Click to reveal the incidents"):
         st.write("""
@@ -93,34 +92,34 @@ if page == "Home & Lore":
         * [cite_start]**April 2025:** The Infinite Bread Glitch (A culinary mystery). [cite: 101-102]
         * [cite_start]**April 2025:** Legendary Brownboard Discovery (A sacred relic). [cite: 103-104]
         * [cite_start]**Nov 2025:** The Balloon Mindf*ck (Peak non-verbal communication). [cite: 109-110]
-        * [cite_start]**General Status:** Shitfaced drunk every time & spending too much on arcades. [cite: 111]
+        * **General Status:** Shitfaced drunk every time & spending too much on arcades.
         """)
 
 # ==========================================
 # PAGE: THE MASTERMINDS
 # ==========================================
 elif page == "The Masterminds":
-    [cite_start]st.title("The Trio Nobody Asked For But Everyone's Stuck With [cite: 19]")
+    st.title("The Trio Nobody Asked For But Everyone's Stuck With")
     
     tab1, tab2, tab3, tab4, tab5 = st.tabs(["Shreyansh", "Sarthak", "Hari", "Akshith", "Devayan"])
     
     with tab1:
         [cite_start]st.header("Shreyansh: The Logistics Guy 📅 [cite: 20-21]")
-        [cite_start]st.write("**Role:** The Brains Behind the Operation. [cite: 22]")
+        st.write("**Role:** The Brains Behind the Operation.")
         [cite_start]st.write("He actually knows what's happening. Has spreadsheets for his spreadsheets. [cite: 23, 27-28]")
         [cite_start]st.error("**Superpowers:** Planning Obsession (bathroom breaks included), Budget Master (splits bills in 2 mins), Navigation Wizard. [cite: 33-41]")
         [cite_start]st.write("Will send you 47 reminders just to be sure. [cite: 31-32]")
         
     with tab2:
         [cite_start]st.header("Sarthak: The Designated Bartender 🍻 [cite: 42-43]")
-        [cite_start]st.write("**Signature Phrase:** 'Chalo daru pite hai' (Let's go drink). [cite: 45]")
+        st.write("**Signature Phrase:** 'Chalo daru pite hai' (Let's go drink).")
         [cite_start]st.write("**Special Skills:** Spontaneity Level 1000. Plans are merely suggestions. [cite: 52-53]")
         [cite_start]st.success("**Greatest Hits:** 'What if we just climb that?' & 'Trust me bro'. Finds places Google Maps doesn't know exist. [cite: 47, 58-59]")
         
     with tab3:
         [cite_start]st.header("Hari: The Adventure Architect 🧭 [cite: 60-62]")
-        [cite_start]st.write("**Role:** Bangalore Navigator & Street Food Connoisseur. [cite: 64, 67]")
-        [cite_start]st.write("One half of the 'Bakchod Duo'. Frequent expeditions have made him a local legend. [cite: 63, 71]")
+        st.write("**Role:** Bangalore Navigator & Street Food Connoisseur.")
+        st.write("One half of the 'Bakchod Duo'. Frequent expeditions have made him a local legend.")
         [cite_start]st.info("**Abilities:** Never uses GPS because he IS the GPS. Knows which tourist traps to avoid. Pro Yulu Rider (Questionable skills). [cite: 74-76, 70]")
         
     with tab4:
@@ -130,8 +129,8 @@ elif page == "The Masterminds":
         [cite_start]st.warning("**Weakness:** Alcohol Tolerance -5. First to pass out. Claims he doesn't drink because 'Krishna ji sab dekh rahe hain'. [cite: 85-88]")
 
     with tab5:
-        [cite_start]st.header("Devayan: The Jump Scare 👻 [cite: 490]")
-        [cite_start]st.write("**Role:** The Enigma We Can't Explain. [cite: 491]")
+        st.header("Devayan: The Jump Scare 👻")
+        st.write("**Role:** The Enigma We Can't Explain.")
         [cite_start]st.write("**Lore:** Indiranagar Enthusiast. Has 67 children in his basement (allegedly). [cite: 492, 497-498]")
         [cite_start]st.error("**Rumor:** Runs an illegal empire bigger than Pablo Escobar's. [cite: 500-501]")
 
@@ -140,13 +139,10 @@ elif page == "The Masterminds":
 # ==========================================
 elif page == "The Itinerary":
     [cite_start]st.title("The Grand Plan: 4 Days of Mayhem [cite: 156-157]")
-    [cite_start]st.caption("Carefully planned chaos by Shreyansh, random additions by Sarthak. [cite: 159]")
+    st.caption("Carefully planned chaos by Shreyansh, random additions by Sarthak.")
     
     st.markdown("Here is where we will be causing chaos:")
-    
-
-[Image of Bangalore city map]
-
+    # Placeholder: Insert your map image here if available using st.image("map.png")
     st.write("📍 **Destination:** Bangalore, Karnataka") 
 
     d1, d2, d3, d4 = st.tabs(["Day 1 (Sat)", "Day 2 (Sun)", "Day 3 (Mon)", "Day 4 (Tue)"])
@@ -192,15 +188,15 @@ elif page == "The Itinerary":
     with d4:
         [cite_start]st.subheader("Tuesday, Jan 27th: The Day of Reckoning [cite: 327-328]")
         [cite_start]st.write("Going home. Shreyansh to Mumbai, Hari to Delhi. Sarthak stays put. [cite: 330-331]")
-        [cite_start]st.write("Post-trip depression begins immediately. [cite: 332]")
+        st.write("Post-trip depression begins immediately.")
 
 # ==========================================
 # PAGE: BUDGET & STATS
 # ==========================================
 elif page == "Budget & Stats":
-    [cite_start]st.title("Data Analysis (Very Scientific) 📊 [cite: 393]")
+    st.title("Data Analysis (Very Scientific) 📊")
     
-    [cite_start]st.subheader("Estimated Budget Breakdown [cite: 381]")
+    st.subheader("Estimated Budget Breakdown")
     
     # FIXED: Using io.StringIO instead of pd.compat.StringIO
     csv_data = """Category,Cost
@@ -220,27 +216,27 @@ Alcohol,12000"""
     [cite_start]st.caption("Notice the priority on Alcohol and Flights. [cite: 391-392]")
 
     st.markdown("---")
-    [cite_start]st.subheader("SWOT Analysis [cite: 402]")
+    st.subheader("SWOT Analysis")
     
     c1, c2 = st.columns(2)
     with c1:
-        [cite_start]st.success("**Strengths:**\nAll the bakchodi we will do and lore for a lifetime. [cite: 405]")
-        [cite_start]st.error("**Weaknesses:**\nYour social battery, 2nd hand embarrassment. [cite: 407]")
+        st.success("**Strengths:**\nAll the bakchodi we will do and lore for a lifetime.")
+        st.error("**Weaknesses:**\nYour social battery, 2nd hand embarrassment.")
     with c2:
-        [cite_start]st.info("**Opportunities:**\nCringe lore, new ways to waste money. [cite: 410]")
-        [cite_start]st.warning("**Threats:**\nAdulting, bank accounts, Monday reality. [cite: 409]")
+        st.info("**Opportunities:**\nCringe lore, new ways to waste money.")
+        st.warning("**Threats:**\nAdulting, bank accounts, Monday reality.")
 
     st.markdown("### Cost-Benefit Analysis")
-    [cite_start]st.write("**Costs:** Hard-earned money, Sleep schedule. [cite: 394, 396]")
-    [cite_start]st.write("**Benefits:** LORE. (That's literally the whole point). [cite: 395, 399, 401]")
+    st.write("**Costs:** Hard-earned money, Sleep schedule.")
+    st.write("**Benefits:** LORE. (That's literally the whole point).")
 
 # ==========================================
 # PAGE: LOGISTICS & LEGAL
 # ==========================================
 elif page == "Logistics & Legal":
-    [cite_start]st.title("The Fine Print 📝 [cite: 335]")
+    st.title("The Fine Print 📝")
     
-    [cite_start]st.subheader("Accommodation & Transport [cite: 364]")
+    st.subheader("Accommodation & Transport")
     [cite_start]st.write("**HQ:** Sarthak's PG (The Central Command). [cite: 366-367]")
     [cite_start]st.write("**Transport:** Uber/Ola. We split costs fairly. Hari knows the routes. [cite: 369-370]")
     
@@ -253,7 +249,7 @@ elif page == "Logistics & Legal":
         [cite_start]st.error("❌ **NOT INCLUDED:**\n* Your Flights\n* Getting you home safely\n* Sarthak's Random Ideas\n* Monday Morning Regrets [cite: 350-363]")
     
     st.markdown("---")
-    [cite_start]st.subheader("⚖️ Legal Notices (Not Really) [cite: 413]")
+    st.subheader("⚖️ Legal Notices (Not Really)")
     st.write("""
     1. [cite_start]We are not responsible for your poor life choices, especially those made after 9 PM. [cite: 414-416]
     2. [cite_start]Any resemblance to actual planning is purely coincidental. [cite: 417-418]
@@ -268,10 +264,10 @@ elif page == "RSVP":
     st.title("Are You In?")
     
     st.markdown("""
-    ### [cite_start]How to RSVP [cite: 448]
-    1. [cite_start]**Text Shreyansh:** He needs to add you to the spreadsheet. [cite: 452, 455]
-    2. [cite_start]**Join the Group Chat:** Where the chaos happens. [cite: 453, 456]
-    3. [cite_start]**Show Up:** The ultimate RSVP. [cite: 454, 457]
+    ### How to RSVP
+    1. **Text Shreyansh:** He needs to add you to the spreadsheet.
+    2. **Join the Group Chat:** Where the chaos happens.
+    3. **Show Up:** The ultimate RSVP.
     """)
     
     if st.button("I'M COMING! 🚀"):
@@ -279,7 +275,7 @@ elif page == "RSVP":
         st.success("Welcome to the madness! Prepare for 4 days of mayhem.")
     
     st.markdown("---")
-    [cite_start]st.subheader("FAQs [cite: 435]")
+    st.subheader("FAQs")
     with st.expander("Is this serious?"):
         [cite_start]st.write("Yes, but also no. [cite: 436-437]")
     with st.expander("Can I bring a friend?"):
